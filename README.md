@@ -1,16 +1,32 @@
-# music_service_module
+# 🎵 Music Service Module (Flutter App)
 
-A new Flutter project.
+A professional, responsive Flutter application for browsing and booking music-related services like production, mixing, mastering, vocals, and lyrics writing.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔥 Home screen with featured banner and custom search
+- 🎯 MVVM architecture using `Provider` and `GetIt` for DI
+- 🧩 Dynamic service list powered by Firebase Firestore
+- 🎨 Responsive UI with Material Design 3
+- 🎶 Custom bottom navigation bar with SVG icons
+- 📦 Asset-based icon loading with fallback
+- 🗂 Modular and clean project structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## 🛠️ Tech Stack
+
+- **Flutter** 3.7+
+- **Firebase Firestore**
+- **Provider** for state management
+- **GetIt** for dependency injection
+- **flutter_svg** for SVG asset rendering
+
+---
+
+## 🔧 Project Structure
+
