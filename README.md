@@ -1,32 +1,90 @@
-# 🎵 Music Service Module (Flutter App)
+# 🎵 Music Service Module
 
-A professional, responsive Flutter application for browsing and booking music-related services like production, mixing, mastering, vocals, and lyrics writing.
-
----
-
-## 📱 Features
-
-- 🔥 Home screen with featured banner and custom search
-- 🎯 MVVM architecture using `Provider` and `GetIt` for DI
-- 🧩 Dynamic service list powered by Firebase Firestore
-- 🎨 Responsive UI with Material Design 3
-- 🎶 Custom bottom navigation bar with SVG icons
-- 📦 Asset-based icon loading with fallback
-- 🗂 Modular and clean project structure
+A clean, responsive Flutter app that allows users to browse and book music-related services like production, mixing, and vocals.
 
 ---
 
+## 🧱 Folder Structure (MVVM + DI)
 
+```
+lib/
+├── data/                    # Repository layer (e.g., Firestore access)
+│   └── services_repository.dart
+├── model/                   # Data classes (e.g., ServiceModel)
+├── viewmodel/               # ViewModels using Provider (e.g., HomeViewModel)
+├── presentation/            # All UI components
+│   ├── screens/             # Home and detail screens
+│   ├── components/          # Reusable UI widgets (e.g., ServiceCard, BottomNavBar)
+├── di/                      # Dependency injection (GetIt setup)
+├── utils/                   # Constants, helper functions
+├── main.dart                # App entry point
+```
 
-## 🛠️ Tech Stack
-
-- **Flutter** 3.7+
-- **Firebase Firestore**
-- **Provider** for state management
-- **GetIt** for dependency injection
-- **flutter_svg** for SVG asset rendering
+We follow the **MVVM pattern** with **Provider for state management** and **GetIt for dependency injection**, ensuring scalable and testable code.
 
 ---
 
-## 🔧 Project Structure
+## ☁️ Firebase & Assets
 
+- Firestore is used to load services dynamically (`collection: services`)
+- Icons are stored locally as **SVGs** and rendered using `flutter_svg`
+- Fallbacks are provided if icons are missing
+
+Firestore Document Example:
+```json
+{
+  "title": "Mixing & Mastering",
+  "description": "Make your tracks radio-ready",
+  "icon": "mix.svg"
+}
+```
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+```bash
+git clone https://github.com/mantsha74/music_service_module.git
+cd music_service_module
+```
+
+2. Install packages:
+```bash
+flutter pub get
+```
+
+3. Setup Firebase (Firestore + google-services.json)
+
+4. Run the app:
+```bash
+flutter run
+```
+
+---
+
+## 🎬 Demo Video
+
+You can preview the app functionality in this demo:
+
+📺 **[Watch Demo Video]([https://drive.google.com/file/d/1XYZabc123456789/view?usp=sharing](https://drive.google.com/file/d/1g3kI82MAKBMKK7hQvIrrz0N1AvPCmJF9/view?usp=sharing))**  
+*(Replace this link with your actual Google Drive share link)*
+
+> 💡 To embed it in GitHub markdown (not playable inline), just paste the share link as shown above.
+
+---
+
+## 📦 Dependencies
+
+- `provider`
+- `get_it`
+- `firebase_core`
+- `cloud_firestore`
+- `flutter_svg`
+
+---
+
+## ✨ Author
+
+**Mantsha Khatoon**  
+[GitHub](https://github.com/mantsha74)
