@@ -6,7 +6,7 @@ import 'package:music_service_module/presentation/screens/home/home_viewmodel.da
 final getIt = GetIt.instance;
 
 Future<void> setupServiceLocator() async {
-  // Register Firebase dependencies
+
   getIt.registerLazySingleton<FirebaseFirestore>(() => FirebaseFirestore.instance);
 
   // Repository layer

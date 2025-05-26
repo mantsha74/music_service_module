@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 
 import '../../../data/repository/services_repository.dart';
 import '../../../model/service_model.dart';
-import '../../navigation/bottom_nav.dart';
 
 class HomeViewModel extends ChangeNotifier {
   final ServicesRepository repository;

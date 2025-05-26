@@ -6,7 +6,7 @@ class BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min, // only take as much space as needed
+      mainAxisSize: MainAxisSize.min,
       children: [
         const Divider(
           height: 1,
@@ -22,7 +22,7 @@ class BottomNavBar extends StatelessWidget {
             type: BottomNavigationBarType.fixed,
             currentIndex: 0,
             selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.white.withOpacity(0.5), // dim white
+            unselectedItemColor: Colors.white.withOpacity(0.5),
             backgroundColor: Colors.black,
             showUnselectedLabels: true,
             onTap: (i) {

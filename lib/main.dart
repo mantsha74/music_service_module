@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       context,
       "Syne",
       "Lobster",
-    ); // or your chosen fonts
+    );
     final materialTheme = MaterialTheme(textTheme);
 
     return MultiProvider(
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: materialTheme.light(),
         // Light theme
-        darkTheme: materialTheme.dark(),
+        darkTheme: materialTheme.light(),
         // Dark theme
         themeMode: ThemeMode.system,
         home: const HomeScreen(),
