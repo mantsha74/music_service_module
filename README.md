@@ -1,38 +1,44 @@
-# 🎵 Music Service Module
+#  Music Service Module
 
 A clean, responsive Flutter app that allows users to browse and book music-related services like production, mixing, and vocals.
 
 ---
 
-## 🎬 Demo Video
+##  Demo Video
 
 You can preview the app functionality in this demo:
 
-📺 **[Watch Demo Video](https://drive.google.com/file/d/1g3kI82MAKBMKK7hQvIrrz0N1AvPCmJF9/view?usp=sharing)**
+ **[Watch Demo Video](https://drive.google.com/file/d/1g3kI82MAKBMKK7hQvIrrz0N1AvPCmJF9/view?usp=sharing)**
 
 ---
 
-## 🧱 Folder Structure (MVVM + DI)
+##  Folder Structure (MVVM + DI)
+
 
 ```
 lib/
-├── data/                    # Repository layer (e.g., Firestore access)
-│   └── services_repository.dart
-├── model/                   # Data classes (e.g., ServiceModel)
-├── viewmodel/               # ViewModels using Provider (e.g., HomeViewModel)
-├── presentation/            # All UI components
-│   ├── screens/             # Home and detail screens
-│   ├── components/          # Reusable UI widgets (e.g., ServiceCard, BottomNavBar)
-├── di/                      # Dependency injection (GetIt setup)
-├── utils/                   # Constants, helper functions
-├── main.dart                # App entry point
+├── core/
+│   ├── di/                      # Dependency injection setup (GetIt)
+│   └── theme/                   # Material and text theme
+├── data/
+│   └── repository/              # Firestore repository
+├── model/                       # Data models (e.g., ServiceModel)
+├── presentation/
+│   ├── navigation/              # Bottom navigation bar
+│   ├── screens/
+│   │   ├── home/                # Home screen + ViewModel
+│   │   └── service_detail/      # Detail screen after tapping a service
+│   └── widgets/                 # Reusable components like ServiceCard
+├── utils/                       # Firebase options, constants
+├── main.dart                    # App entry point
 ```
+
 
 We follow the **MVVM pattern** with **Provider for state management** and **GetIt for dependency injection**, ensuring scalable and testable code.
 
 ---
 
-## ☁️ Firebase & Assets
+##  Firebase & Assets
 
 - Firestore is used to load services dynamically (`collection: services`)
 - Icons are stored locally as **SVGs** and rendered using `flutter_svg`
@@ -49,7 +55,7 @@ Firestore Document Example:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone the repo:
 ```bash
@@ -75,7 +81,7 @@ flutter run
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 - `provider`
 - `get_it`
@@ -85,7 +91,7 @@ flutter run
 
 ---
 
-## ✨ Author
+##  Author
 
 **Mantsha Khatoon**  
 [GitHub](https://github.com/mantsha74)
