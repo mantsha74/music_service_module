@@ -4,6 +4,14 @@ A clean, responsive Flutter app that allows users to browse and book music-relat
 
 ---
 
+## 🎬 Demo Video
+
+You can preview the app functionality in this demo:
+
+📺 **[Watch Demo Video](https://drive.google.com/file/d/1g3kI82MAKBMKK7hQvIrrz0N1AvPCmJF9/view?usp=sharing)**
+
+---
+
 ## 🧱 Folder Structure (MVVM + DI)
 
 ```
@@ -63,14 +71,7 @@ flutter run
 
 ---
 
-## 🎬 Demo Video
 
-You can preview the app functionality in this demo:
-
-📺 **[Watch Demo Video]([https://drive.google.com/file/d/1XYZabc123456789/view?usp=sharing](https://drive.google.com/file/d/1g3kI82MAKBMKK7hQvIrrz0N1AvPCmJF9/view?usp=sharing))**  
-*(Replace this link with your actual Google Drive share link)*
-
-> 💡 To embed it in GitHub markdown (not playable inline), just paste the share link as shown above.
 
 ---
 
